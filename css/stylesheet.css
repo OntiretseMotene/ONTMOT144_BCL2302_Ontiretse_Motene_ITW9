@@ -1,0 +1,150 @@
+/* Styling applied to the body section */
+body {
+    font-family: sans-serif;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: ghostwhite;
+}
+
+/* styling applied to nav-bar */
+nav-bar {
+    background-color: darkgray;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li :first-child {
+    margin-left: auto;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* styling header section */
+header {
+    align-items: center;
+    background-color: ghostwhite;
+    background-image: url;
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: centre;
+    padding: 2rem;
+}
+
+#profilePhoto {
+    width: 150px;
+    height: 150px;
+    border: 5px solid orange;
+    border-radius: 60%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr;
+    margin: 2 rem;
+}
+
+@media (min-width: 800px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }  
+} 
+
+@media (min-width: 1200px) {
+    main {
+        grid-template-columns: repeat (3, 1fr);
+    }
+}
+
+/* footer styling */
+
+footer {
+    background-color: darkgray;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    padding: 1 rem;
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+
+}
+
+@keyframes icons {
+    0% {transform: rotate (90deg);}
+    25% {transform: rotate(180deg);}
+    50% {transform: rotate(270deg);
+         transform: translate(25px);
+        }
+    75% {transform: rotate(360deg);
+         transform: scale(75%);
+        }
+    100% {transform: scale(50%);
+          filter: grayscale(100%) ;}
+}
+
+.icons:hover {
+    animation-duration: 5s;
+    animation-name: icons;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li:first-child{
+    margin-left: auto;
+}
+
+ul a {
+    color: orange
+}
+
+li a:hover {
+    background-color: orange;
+}
