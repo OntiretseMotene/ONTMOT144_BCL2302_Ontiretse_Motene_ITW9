@@ -38,8 +38,7 @@ nav ul li a {
 /* styling header section */
 header {
     align-items: center;
-    background-color: ghostwhite;
-    background-image: url;
+    background-color: wheat;
     display:grid;
     grid-template-columns: 1fr;
     justify-items: centre;
@@ -60,11 +59,17 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    font-weight: normal;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem;
 }
 
 h3 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    background-color: darkgray;
+}
+
+h4 {
     font-size: 1rem;
     font-weight: normal;
     margin-bottom: 0.5rem;
@@ -73,17 +78,18 @@ h3 {
 main {
     display: grid;
     grid-gap: 1.5rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: 2 rem;
+    background-color: antiquewhite;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     main {
         grid-template-columns: repeat(2, 1fr);
     }  
 } 
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     main {
         grid-template-columns: repeat (3, 1fr);
     }
